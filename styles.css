@@ -110,7 +110,7 @@ header:hover .back-drop {
     transform: scale(1.5);
 }
 
-.unlock .fa-lock-open {
+.unlock .fa-lock {
     visibility: hidden;
 }
 
@@ -129,11 +129,11 @@ header:hover .back-drop {
     transform: scale(1.5);
 }
 
-.toggle:checked ~ .fa-lock-open {
+.toggle:checked ~ .fa-lock {
     visibility: visible;
 }
 
-.toggle:checked ~ .fa-lock {
+.toggle:checked ~ .fa-lock-open {
     visibility: hidden;
 }
 

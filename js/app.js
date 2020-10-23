@@ -5,25 +5,21 @@ var pass1="pjy020725";
 var yes = localStorage.getItem('yes');
 
 // password=prompt('암호 므야','');
-
-if (password==pass1)
-    alert('그래 박정영 어서와');
-else
-    {
-    // location.reload();
-    // window.location="https://www.instagram.com/pjy0_02/";
-    }
-
 if (yes !== 'true'){
-    password=prompt('암호 므야','');
+        password=prompt('암호 므야','');
+
+        if (password==pass1){
+            alert('그래 박정영 어서와');
+        }else
+        {
+            location.reload();
+            // window.location="https://www.instagram.com/pjy0_02/";
+        }
+
+    if (password==pass1){
+        localStorage.setItem('yes', 'true');
     }
-
-
-
-if (password==pass1){
-    localStorage.setItem('yes', "true");
 }
-
 
 
 
@@ -31,9 +27,9 @@ if (password==pass1){
 var checkbox = document.querySelector("input[name=checkbox]");
     checkbox.addEventListener( 'change', function() {
         if(this.checked) {
-            password=prompt('암호 므야','');
+            localStorage.removeItem('yes');
         } else {
-            // Checkbox is not checked..
+            localStorage.setItem('yes', 'true');
         }
     });
 
