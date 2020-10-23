@@ -98,6 +98,14 @@ header:hover .back-drop {
     transform: scale(1);
 }
 
+.unlock {
+    position: fixed;
+    top: 28px;
+    right: 28px;
+    z-index: 98;
+    display: inline-block;
+}
+
 .unlock .toggle {
     position: absolute;
     top: 28px;
