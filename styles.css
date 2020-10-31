@@ -1,3 +1,45 @@
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -148,7 +190,7 @@ header:hover .back-drop {
     top: 28px;
     right: 28px;
     z-index: 98;
-    display: none;
+    /* display: none; */
 }
 
 .menu-wrap .toggler {
@@ -252,16 +294,18 @@ header:hover .back-drop {
 }
 
 .menu > div {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    background: rgba(20, 20, 20);
+    width: 110vw;
+    height: 100%;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
+    -webkit-box-shadow: inset 0px 0px 41px 23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 41px 23px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 41px 23px rgba(0, 0, 0, 0.75);
 }
 
 .menu > div > div {
@@ -270,6 +314,18 @@ header:hover .back-drop {
     max-height: 100vh;
     opacity: 0;
     transition: opacity 0.4s ease;
+}
+
+.menu > div > div > h2 {
+    width: 100%;
+    font-size: 3.3vw;
+    color: #fff;
+    font-weight: 300;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.menu > div > div > ul {
+    display: flex;
 }
 
 .menu > div > div > ul > li {
@@ -287,6 +343,45 @@ header:hover .back-drop {
 
 main {
     padding-top: 150px;
+    max-width: 80%;
+}
+
+.profile-icon {
+    height: 10vw;
+    width: 10vw;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 84px;
+    min-width: 84px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #333;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+.profile:hover .profile-icon {
+    border: solid #fff 3px;
+}
+
+.profile:hover .profile-name {
+    color: #fff;
+}
+
+.profile-name {
+    color: rgb(128, 128, 128);
+    line-height: 1.5;
+    display: block;
+    padding: 0.6em 0;
 }
 
 .youtube {
