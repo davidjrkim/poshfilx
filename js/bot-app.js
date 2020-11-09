@@ -9,3 +9,18 @@ checkbox.addEventListener( 'change', function() {
         localStorage.setItem('yes', 'true');
     }
 });
+
+function cbclick(e){
+    e = e || event;
+    var cb = e.srcElement || e.target;
+    if (cb.type !== 'checkbox') {return true;}
+    var cbxs = document.getElementById('radiocb').getElementsByTagName('input'), i=cbxs.length;
+     while(i--) {
+         if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+          cbxs[i].checked = false;
+         }
+     }
+     // if the click should always result in a checked checkbox 
+     // unconmment this:
+     // cb.checked = true;
+ }
