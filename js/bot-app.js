@@ -10,6 +10,10 @@ checkbox.addEventListener( 'change', function() {
     }
 });
 
+
+
+// this is for redio button a fying the checkbox
+
 function cbclick(e){
     e = e || event;
     var cb = e.srcElement || e.target;
