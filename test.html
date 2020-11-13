@@ -17,13 +17,16 @@
     <div style="width:100vw;height:100vh;" > <iframe style="width:100%;height:100%;" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7wx012" width="100%" height="100%" allowfullscreen > </iframe> </div>
     <script>
 
-window.addEventListener("orientationchange", function(event) {
-  var viewport = document.querySelector('meta[name="viewport"]');
+var zoomreset = function() {
+    var viewport = document.querySelector("meta[name='viewport']");
+    viewport.content = "width=650, maximum-scale=0.635";
+    setTimeout(function() {
+        viewport.content = "width=650, maximum-scale=1";
+    }, 350);
+}
 
-  if ( viewport ) {
-    viewport.content = 'initial-scale=1';
-      viewport.content = 'width=device-width';
-  }
+window.addEventListener("orientationchange", function(event) {
+    setTimeout(zoomreset, 150);
 });
 
     </script>
