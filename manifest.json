@@ -1,0 +1,8 @@
+{
+    "name": "App Full Name",
+    "short_name": "AppName",
+    "lang": "zh-CN",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone"
+  }
