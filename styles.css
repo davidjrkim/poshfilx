@@ -137,6 +137,10 @@ nav ul li ul li a {
     text-align: center;
 }
 
+nav .come {
+    display: none;
+}
+
 .back-drop {
     position: fixed;
     background-color: #0c4068;
@@ -290,6 +294,10 @@ header:hover .back-drop {
     transition: opacity 0.4s ease 0.4s;
 }
 
+main {
+    min-height: 65vh;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -356,6 +364,10 @@ main {
     padding-top: 150px;
     max-width: 80%;
     background-color: #141414;
+}
+
+#profile-selecte {
+    cursor: pointer;
 }
 
 .pro-logo {
@@ -557,24 +569,27 @@ footer p a {
 }
 
 @media only screen and (max-width: 1220px) {
-    nav ul li a {
-        padding: 60px 50px;
-        font-size: 18px;
-    }
-    nav ul li ul li a {
-        padding: 10px 41px;
-    }
-    .sub-nav ul {
-        width: 60%;
-    }
     .menu-main ul {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 844px) {
-    nav ul {
+    nav .bye {
         display: none;
+    }
+    nav .come {
+        display: flex;
+    }
+
+    .bottom-nav {
+        justify-content: space-around;
+    }
+    .movie-con {
+        margin: 0 10px;
+    }
+    .abso-down {
+        width: 100vh;
     }
     header:hover ul li ul,
     header:hover .back-drop {
