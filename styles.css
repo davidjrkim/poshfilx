@@ -45,9 +45,17 @@
     padding: 0;
 }
 
+button {
+    border: 0 none;
+}
+
+body {
+    background-color: #141414;
+}
+
 header {
     width: 100%;
-    background-color: #003054;
+    background-color: #010101;
     z-index: 92;
     position: fixed;
 }
@@ -70,33 +78,36 @@ header {
     transform: scale(1.1) rotate(-10deg);
 }
 
-nav {
+nav .inner-nav {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 150px;
-    background-color: #003054;
-    z-index: 10;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    margin: auto 50px;
 }
 
 nav ul li {
     list-style: none;
     position: relative;
+    margin: auto 0;
+}
+
+nav ul li img {
+    height: 40px;
 }
 
 nav ul li a {
     display: block;
-    padding: 60px 80px;
-    background-color: #003054;
+    padding: 15px 15px;
+    background-color: #010101;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 15px;
     font-family: "MapoPeacefull";
     color: #ffffff;
+    transition: all 0.4s ease-in-out;
 }
 
 nav ul li a:hover {
@@ -344,6 +355,7 @@ header:hover .back-drop {
 main {
     padding-top: 150px;
     max-width: 80%;
+    background-color: #141414;
 }
 
 .pro-logo {
@@ -399,6 +411,91 @@ main {
 .youtube {
     text-align: center;
     padding: 50px;
+}
+
+.myBtn {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.movie-con {
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+}
+
+.movie-con h3 {
+    color: #fff;
+    font-size: x-large;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.movie-con ul li {
+    list-style: none;
+}
+
+.movie-con img {
+    width: 300px;
+    border-radius: 4px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #181818;
+    margin: auto;
+    padding: 27% 20px 20px 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.modal-content p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.movie-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 footer {
@@ -521,6 +618,9 @@ footer p a {
     }
     .profile-name {
         font-size: 12px;
+    }
+    .modal-content {
+        margin: auto 20px;
     }
 }
 

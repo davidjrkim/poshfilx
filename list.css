@@ -41,7 +41,7 @@ label {
 }
 .nav {
     width: 100%;
-    background-color: white;
+    background-color: #141414;
     overflow-x: hidden;
     border-bottom: 1px solid #cfd8dc;
 }
@@ -62,7 +62,7 @@ label {
     padding: 0 2em;
     list-style: none;
     text-decoration: none;
-    color: #0e2f3f;
+    color: #ffffff;
 
     width: 100%;
 }
