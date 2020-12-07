@@ -560,7 +560,6 @@ footer p a {
     position: absolute;
     right: 45px;
     bottom: 45px;
-    z-index: 1;
 }
 
 .foot-social li {
