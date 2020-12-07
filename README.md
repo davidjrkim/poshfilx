@@ -1,3 +1,3 @@
 # the-pjy
 
-<a href="https://davidjrkim.github.io/the-pjy/">site</a>
+<a href="https://naughty-bohr-8fdf57.netlify.app/">site</a>
