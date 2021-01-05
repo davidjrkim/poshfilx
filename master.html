@@ -22,8 +22,8 @@
                         <li>
                             <a onclick="window.location.reload(true);" href=""><img src="images/main-logo.png" alt="" /></a>
                         </li>
-                        <li><a href="">TV프로그램</a></li>
-                        <li><a href="">영화</a></li>
+                        <li><a href="#tv-show">TV프로그램</a></li>
+                        <li><a href="#movie-id">영화</a></li>
                         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9n7M0ocIkulIR3tGvFkb5-iiiDFmMluowwPq0Bke-MiUn1A/viewform?vc=0&c=0&w=1&flr=0" target="_blank">내가 원하는 영화 요청</a></li>
                     </ul>
                     <ul>
@@ -160,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <h3>영화</h3>
+                    <h3 id="movie-id">영화</h3>
                     <!-- mulan btn -->
                     <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal3" src="images/poster/mulan.jpg" alt="mulan" /></li>
                     <!-- mulan modal -->
@@ -230,7 +230,22 @@
                             </video>
                         </div>
                     </div>
-                    <h3>TV 쇼</h3>
+                    <!-- ww84 btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal10" src="images/poster/ww84.jpg" alt="ww84" /></li>
+                    <!-- ww84 modal -->
+                    <div id="myModal10" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/ww84-poster.jpg" alt="" />
+
+                            <h2>원더우먼 1984</h2>
+                            <video controls="controls" id="video1" width="80%">
+                                <source src="movies/ww84/ww84.mp4" type="video/mp4" />
+                                <track src="movies/ww84/ww84.vtt" srclang="ko" label="Korean" />
+                            </video>
+                        </div>
+                    </div>
+                    <h3 id="tv-show">TV 쇼</h3>
                     <!-- Disenchantment btn -->
                     <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal5" src="images/poster/disenchantment.jpg" alt="disenchantment" /></li>
                     <!-- Disenchantment modal -->
