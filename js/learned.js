@@ -1,108 +1,162 @@
-
-
-
-// const getUrl = document.querySelectorAll('#radiocb a')[0].getAttribute("href");
-const getUrl = document.querySelectorAll('#radiocb a');
-const ulUrl = document.querySelectorAll('#radiocb ul');
-const player = document.getElementById('player');
-let ep = localStorage.getItem('number');
-let m1 = localStorage.getItem('movie1');
-let m2 = localStorage.getItem('movie2');
-let m3 = localStorage.getItem('movie3');
-let m4 = localStorage.getItem('movie4');
-let m5 = localStorage.getItem('movie5');
-let m6 = localStorage.getItem('movie6');
-let m7 = localStorage.getItem('movie7');
-let m8 = localStorage.getItem('movie8');
-let m9 = localStorage.getItem('movie9');
-let m10 = localStorage.getItem('movie10');
-let m11 = localStorage.getItem('movie11');
-let m12 = localStorage.getItem('movie12');
-let m13 = localStorage.getItem('movie13');
-let m14 = localStorage.getItem('movie14');
-let m15 = localStorage.getItem('movie15');
-let m16 = localStorage.getItem('movie16');
-console.log(ulUrl[0]);
-
+const player = document.getElementById("player");
 let contentEM;
 
-// for (let i = 0; i < getUrl.length; i++) {
-//     contentEM = `<a href="${getUrl[i].getAttribute("href")}">시즌10e${i+1} (빠른 링크)</a>`;
-//     ulUrl[i].innerHTML = contentEM;
-// }
+// abc counter
 
+const counter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z"];
 
-for (let i = 0; i < getUrl.length; i++) {
-    contentEM = `<a href="player.html#${i+1}ep">시즌10e${i+1} (빠른 링크)</a>`;
-    ulUrl[i].innerHTML = contentEM;
-    localStorage.setItem(`movie${i+1}`, getUrl[i].getAttribute("href"));
-    localStorage.setItem("number", `${i+1}`);
+// abc counter
+
+// movie name
+
+const TWDs10 = {
+    title: "워킹데드 시즌10",
+    title_folder: "the-walking-dead",
+    season_folder: "TWDs10",
+    episode_name: "twd-e",
+    episode_format: "화",
+    to_document: document.getElementById("twds10"),
+    id: "B",
+    episode_number: 16,
+    video_type: "mp4",
+    video_format: "mkv",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const harrypotter = {
+    title: "해리포터",
+    title_folder: "harry-potter",
+    season_folder: "harry-potter",
+    episode_name: "harry-potter-",
+    episode_format: "편",
+    to_document: document.querySelector("#hpmovie"),
+    id: "D",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const disenchantment = {
+    title: "디스인챈트 시즌1 파트1 (",
+    title_folder: "disenchantment",
+    season_folder: "disenchantment-s1-p1",
+    episode_name: "disenchantment-e",
+    episode_format: "편 )",
+    to_document: document.getElementById("disenchantment-s1-p1"),
+    id: "E",
+    episode_number: 10,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const disenchantment_p2 = {
+    title: "디스인챈트 시즌1 파트2 (",
+    title_folder: "disenchantment",
+    season_folder: "disenchantment-s1-p2",
+    episode_name: "disenchantment-p2-e",
+    episode_format: "편 )",
+    to_document: document.getElementById("disenchantment-s1-p2"),
+    id: "F",
+    episode_number: 10,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "srt",
+};
+
+const goblin = {
+    title: "도깨비",
+    title_folder: "goblin",
+    season_folder: "goblin",
+    episode_name: "goblin-e",
+    episode_format: "화",
+    to_document: document.getElementById("goblin"),
+    id: "G",
+    episode_number: 16,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: false,
+    subtitle_format: "null",
+};
+
+const goblinSP = {
+    title: "도깨비 스페셜",
+    title_folder: "goblin",
+    season_folder: "goblin-special",
+    episode_name: "goblin-special",
+    episode_format: "화",
+    to_document: document.getElementById("goblin-sp"),
+    id: "H",
+    episode_number: 3,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: false,
+    subtitle_format: "null",
+};
+
+const violet = {
+    title: "바이올렛 에버가든",
+    title_folder: "violet-evergarden",
+    season_folder: "violet-evergarden",
+    episode_name: "violet-evergarden-e",
+    episode_format: "화",
+    to_document: document.getElementById("violet"),
+    id: "I",
+    episode_number: 14,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+// movie name
+
+function videoInsert(ob) {
+    for (let i = 0; i < ob["episode_number"]; i++) {
+        var node = document.createElement("LI");
+        if (ob["subtitle"]) {
+            node.innerHTML = `
+        <div class="sub-item">
+            <input type="checkbox" id="${ob["id"]}-${counter[i]}" />
+            <img src="images/Arrow.png" class="arrow" /><label for="${ob["id"]}-${counter[i]}">${ob["title"]} ${i + 1}${ob["episode_format"]}</label>
+
+            <ul>
+                <p>${ob["title"]} ${i + 1}${ob["episode_format"]}</p>
+                <video controls="controls" id="video1" width="80%">
+                <source src="movies/${ob["title_folder"]}/${ob["season_folder"]}/${ob["episode_name"]}${i + 1}/${ob["episode_name"]}${i + 1}.${ob["video_format"]}" type="video/${ob["video_type"]}" />
+                <track src="movies/${ob["title_folder"]}/${ob["season_folder"]}/${ob["episode_name"]}${i + 1}/${ob["episode_name"]}${i + 1}.${ob["subtitle_format"]}" srclang="ko" label="Korean" />
+                </video>
+            </ul>
+        </div>
+    `;
+        } else {
+            node.innerHTML = `
+            <div class="sub-item">
+                <input type="checkbox" id="${ob["id"]}-${counter[i]}" />
+                <img src="images/Arrow.png" class="arrow" /><label for="${ob["id"]}-${counter[i]}">${ob["title"]} ${i + 1}${ob["episode_format"]}</label>
+    
+                <ul>
+                    <p>${ob["title"]} ${i + 1}${ob["episode_format"]}</p>
+                    <video controls="controls" id="video1" width="80%">
+                    <source src="movies/${ob["title_folder"]}/${ob["season_folder"]}/${ob["episode_name"]}${i + 1}/${ob["episode_name"]}${i + 1}.${ob["video_format"]}" type="video/${ob["video_type"]}" />
+                    </video>
+                </ul>
+            </div>
+        `;
+        }
+        ob["to_document"].appendChild(node);
+    }
 }
 
-for (let i = 0; i < ep; i++) {
-    player.innerHTML += `<div class="outer-button" id="${i+1}ep"><button onclick="f${i+1}()">Play Ep${i+1}</button>`;
-}
-
-// document.getElementById("ep1").addEventListener("click", function() {
-//     player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m1}" width="100%" height="100%" allowfullscreen > </iframe>`;
-//   });
-
-function f1() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m1}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f2() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m2}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f3() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m3}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-function f4() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m4}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f5() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m5}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f6() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m6}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f7() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m7}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f8() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m8}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f9() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m9}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f10() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m10}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f12() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m12}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f13() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m13}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f14() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m14}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f15() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m15}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
-function f16() {
-    player.innerHTML = `<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="${m16}" width="100%" height="100%" allowfullscreen > </iframe>`;
-}
-
+videoInsert(TWDs10);
+videoInsert(harrypotter);
+videoInsert(disenchantment);
+videoInsert(disenchantment_p2);
+videoInsert(goblin);
+videoInsert(goblinSP);
+videoInsert(violet);

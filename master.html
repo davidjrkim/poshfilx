@@ -1,354 +1,373 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <link rel="icon" href="images/favcon.png" type="image/png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="list.css">
-    <script src="https://kit.fontawesome.com/31648eb95d.js" crossorigin="anonymous"></script>
-    <title>빡JY's 플렉스</title>
-    <script type="text/javascript" src="js/app.js" ></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="inner-nav">
-                <ul class="come">
-                <li><a href=""><img src="images/favcon.png" alt=""></a></li>
-                </ul>
-                <ul class="bye">
-                    <li><a href=""><img src="images/main-logo.png" alt=""></a></li>
-                    <li><a href="">TV프로그램</a></li>
-                    <li><a href="">영화</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9n7M0ocIkulIR3tGvFkb5-iiiDFmMluowwPq0Bke-MiUn1A/viewform?vc=0&c=0&w=1&flr=0" target="_blank">내가 원하는 영화 요청</a></li>
-                </ul>
-                <ul>
-                    <li class="bye"><a href="">검색</a></li>
-                    <li class="bye"><a href="">알림</a></li>
-                    <li id="profile-selecte"><img src="images/david.png" alt=""></li>
-                </ul>
-            </div>
-            <ul class=" bottom-nav come">
-                <li><a href="">TV프로그램</a></li>
-                <li><a href="">영화</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9n7M0ocIkulIR3tGvFkb5-iiiDFmMluowwPq0Bke-MiUn1A/viewform?vc=0&c=0&w=1&flr=0">내가 원하는 영화 요청</a></li>
-            </ul>
-        </nav>
-        <div class="menu-wrap">
-        <div class="menu">
-            <div>
-                <div>
-                    <div class="pro-logo"><img src="https://fontmeme.com/permalink/201109/e52951d466a0db107caf4e426bd6430b.png" alt=""></div>
-                    <h2>Poshflix를 시청할 프로필을 선택하세요.</h2>
+    <head>
+        <link rel="icon" href="images/favcon.png" type="image/png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="list.css" />
+        <script src="https://kit.fontawesome.com/31648eb95d.js" crossorigin="anonymous"></script>
+        <title>빡JY's 플렉스</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="inner-nav">
+                    <ul class="come">
+                        <li>
+                            <a onclick="window.location.reload(true);"><img onclick="window.location.reload();" src="images/favcon.png" alt="" /></a>
+                        </li>
+                    </ul>
+                    <ul class="bye">
+                        <li>
+                            <a onclick="window.location.reload(true);" href=""><img src="images/main-logo.png" alt="" /></a>
+                        </li>
+                        <li><a href="">TV프로그램</a></li>
+                        <li><a href="">영화</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9n7M0ocIkulIR3tGvFkb5-iiiDFmMluowwPq0Bke-MiUn1A/viewform?vc=0&c=0&w=1&flr=0" target="_blank">내가 원하는 영화 요청</a></li>
+                    </ul>
                     <ul>
-                        <li class="profile"><div>
-                            <a href="master.html">
-                                <div>
-                                    <div class="profile-icon" style="background-image: url(images/pjy-face.JPG)">
-                                    </div>
-                                </div>
-                                <span class="profile-name">빡's flex</span>
-                            </a>
-                        </div></li>
-                        <li class="profile"><div>
-                            <a href="">
-                                <div>
-                                    <div class="profile-icon" style="background-image: url(https://occ-0-988-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABXhp5HP4mhkdVeQArMrlAQzXKC2Msh_QSY1MEgD1JkcGpPsVWktTQPACg__X19xET77cgRGRVYpDYbNxcr5YjWGmui83.png?r=a38)">
-                                    </div>
-                                </div>
-                                <span class="profile-name">대윗</span>
-                            </a>
-                        </div></li>
-                        <li class="profile"><div>
-                            <a href="">
-                                <div>
-                                    <div class="profile-icon" style="background-image: url(pjy-face.JPG)">
-                                    </div>
-                                </div>
-                                <span class="profile-name">null</span>
-                            </a>
-                        </div></li>
-                        <li class="profile"><div>
-                            <a href="">
-                                <div>
-                                    <div class="profile-icon" style="background-image: url(pjy-face.JPG)">
-                                    </div>
-                                </div>
-                                <span class="profile-name">null</span>
-                            </a>
-                        </div></li>
-                        <li class="profile"><div>
-                            <a href="">
-                                <div>
-                                    <div class="profile-icon" style="background-image: url(pjy-face.JPG)">
-                                    </div>
-                                </div>
-                                <span class="profile-name">null</span>
-                            </a>
-                        </div></li>
-                        
+                        <li class="bye"><a href="">검색</a></li>
+                        <li class="bye"><a href="">알림</a></li>
+                        <li id="profile-selecte"><img src="images/david.png" alt="" /></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-    </header>
-
-    <main>
-       
-        <div class="movie-con">
-            <ul>
-                <h3>호러 드라마</h3>
-                <li class="myBtn"><img src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW3cWeVvHTkDrgmfrbsTAdhkWlvlIy349xtKiEtA9ZrKv78wSS0PbyCtHt4kLNNb4C8pbCNht0BY4n_14_lcKbi150uRdYRy6UrBl2Pp5CpOW4_0oipDs5bfu2tdscGBskiGsbeJcuquZ9Ft8pvKv7NgNXL34LxEoB6_WCiHEwuhm3dCdkEvjJF808yn.webp?r=024" alt=""></li>
-                <li class="myBtn"><img src="images/king-doom.jpg" alt=""></li>
-
-            </ul>
-        </div>
-
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <img class="movie-img" src="images/the-walking-dead-s1.png" alt="">
-                <p>
-                    2019 시즌 10개 <br /><br />
-                    오늘 한국에서 콘텐츠 순위 10위 <br /><br />
-                    시즌 1: 1화 "사라지다" <br /><br />
-                    어느 날 갑자기 좀비가 점령해버린 세상. 지금까지 살아온 방식은 잊어야 한다. 우연히 마주친 모건 부자에게 새로운 생존 법칙을 배우는 릭. 사라진 가족, 꼭 찾고 말리라.</p> <br /><br />
-                <div class="nav">
-                    <div class="multi-level">
-
-                        <div class="item">
-                            <input type="checkbox" id="B"/>
-                            <img src="images/Arrow.png" class="arrow"><label for="B">시즌10</label>
-                            
-                            <ul id="radiocb" onclick="cbclick(event)">
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-A"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-A">워킹데드 시즌10 1화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7wx012">빠른 링크</a>(느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7wx012" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-                                    </ul>
-                                </div></li>
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-B"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-B">워킹데드 시즌10 2화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7xh5om">빠른 링크</a> (느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7xh5om" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-C"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-C">워킹데드 시즌10 3화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7wz5ld">빠른 링크</a> (느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7wz5ld" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-D"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-D">워킹데드 시즌10 4화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7x0xhw">빠른 링크</a> (느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7x0xhw" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-E"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-E">워킹데드 시즌10 5화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7x0xl5">빠른 링크</a> (느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7x0xl5" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-F"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-F">워킹데드 시즌10 6화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7x0xor">빠른 링크</a> (느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7x0xor" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-G"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-G">워킹데드 시즌10 7화</label>
-                                    
-                                    <ul>
-                                        <li><a href="https://www.dailymotion.com/embed/video/x7xc4ym?autoplay=1">빠른 링크</a> (느린거 곧 고침 ㄱㄷ)</li>
-                                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7xc4ym?autoplay=1" width="100%" height="100%" allowfullscreen > </iframe> </div>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-H"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-H">워킹데드 시즌10 8화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-I"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-I">워킹데드 시즌10 9화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-J"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-J">워킹데드 시즌10 10화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-K"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-K">워킹데드 시즌10 11화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-L"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-L">워킹데드 시즌10 12화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-M"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-M">워킹데드 시즌10 13화</label>
-                                    
-                                    <ul>
-                                        
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-N"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-N">워킹데드 시즌10 14화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-O"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-O">워킹데드 시즌10 15화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                <li><div class="sub-item">
-                                    <input type="checkbox" id="B-P"/>
-                                    <img src="images/Arrow.png" class="arrow"><label for="B-P">워킹데드 시즌10 16화</label>
-                                    
-                                    <ul>
-        
-                                    </ul>
-                                    
-                                </div></li>
-        
-                                
+                <ul class="bottom-nav come">
+                    <li><a href="">TV프로그램</a></li>
+                    <li><a href="">영화</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9n7M0ocIkulIR3tGvFkb5-iiiDFmMluowwPq0Bke-MiUn1A/viewform?vc=0&c=0&w=1&flr=0">내가 원하는 영화 요청</a></li>
+                </ul>
+            </nav>
+            <div class="menu-wrap">
+                <div class="menu">
+                    <div>
+                        <div>
+                            <div class="pro-logo"><img src="https://fontmeme.com/permalink/201109/e52951d466a0db107caf4e426bd6430b.png" alt="" /></div>
+                            <h2>Poshflix를 시청할 프로필을 선택하세요.</h2>
+                            <ul>
+                                <li class="profile">
+                                    <div>
+                                        <a href="master.html">
+                                            <div>
+                                                <div class="profile-icon" style="background-image: url(images/pjy-face.JPG)"></div>
+                                            </div>
+                                            <span class="profile-name">빡's flex</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="profile">
+                                    <div>
+                                        <a href="master.html">
+                                            <div>
+                                                <div class="profile-icon" style="background-image: url(https://occ-0-988-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABXhp5HP4mhkdVeQArMrlAQzXKC2Msh_QSY1MEgD1JkcGpPsVWktTQPACg__X19xET77cgRGRVYpDYbNxcr5YjWGmui83.png?r=a38)"></div>
+                                            </div>
+                                            <span class="profile-name">나샤</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="profile">
+                                    <div>
+                                        <a href="master.html">
+                                            <div>
+                                                <div class="profile-icon" style="background-image: url(images/netflix-face.jpg)"></div>
+                                            </div>
+                                            <span class="profile-name">마리아</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="profile">
+                                    <div>
+                                        <a href="master.html">
+                                            <div>
+                                                <div class="profile-icon" style="background-image: url(images/netflix-face.jpg)"></div>
+                                            </div>
+                                            <span class="profile-name">에클</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="profile">
+                                    <div>
+                                        <a href="master.html">
+                                            <div>
+                                                <div class="profile-icon" style="background-image: url(images/netflix-face.jpg)"></div>
+                                            </div>
+                                            <span class="profile-name">라라</span>
+                                        </a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
-
-                    
                 </div>
-              </div>
             </div>
-        
-    </main>
+        </header>
 
-    <footer>
-        <div class="inner-fooder">
-            <div class="foot-list">
-                <ul>
-                    <li><a href="개인정보.html">개인정보취급방침</a></li>
-                    <li><a href="dd/index.html">이용약관</a></li>
-                    <li><a href="footer-1.html">상담센터</a></li>
-                    <li><a href="footer-2.html">PJY 안내</a></li>
-                    <li><a href="#header">사이트맵</a></li>
+        <main>
+            <div class="movie-con">
+                <ul class="movie-icon">
+                    <h3>호러 드라마</h3>
+
+                    <!-- Trigger/Open The Modal -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal1" src="images/poster/the-walking-dead.png" alt="the walking dead" /></li>
+
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/the-walking-dead-s1.png" alt="" />
+                            <p>
+                                2019 시즌 10개 <br /><br />
+                                오늘 한국에서 콘텐츠 순위 10위 <br /><br />
+                                시즌 1: 1화 "사라지다" <br /><br />
+                                어느 날 갑자기 좀비가 점령해버린 세상. 지금까지 살아온 방식은 잊어야 한다. 우연히 마주친 모건 부자에게 새로운 생존 법칙을 배우는 릭. 사라진 가족, 꼭 찾고 말리라.
+                            </p>
+                            <br /><br />
+                            <div class="nav">
+                                <div class="multi-level">
+                                    <div class="item">
+                                        <input type="checkbox" id="B" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="B">시즌10</label>
+
+                                        <ul id="twds10" onclick="cbclick(event)"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trigger/Open The Modal -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal2" src="images/poster/kingdom.jpg" alt="kingdom" /></li>
+
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/the-walking-dead-s1.png" alt="" />
+                            <p>
+                                2019 시즌 10개 <br /><br />
+                                오늘 한국에서 콘텐츠 순위 10위 <br /><br />
+                                시즌 1: 1화 "사라지다" <br /><br />
+                                어느 날 갑자기 좀비가 점령해버린 세상. 지금까지 살아온 방식은 잊어야 한다. 우연히 마주친 모건 부자에게 새로운 생존 법칙을 배우는 릭. 사라진 가족, 꼭 찾고 말리라.
+                            </p>
+                            <br /><br />
+                            <div class="nav">
+                                <div class="multi-level">
+                                    <div class="item">
+                                        <input type="checkbox" id="B" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="B">시즌10</label>
+
+                                        <ul id="radiocb" onclick="cbclick(event)"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>영화</h3>
+                    <!-- mulan btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal3" src="images/poster/mulan.jpg" alt="mulan" /></li>
+                    <!-- mulan modal -->
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/mulan-modal.jpg" alt="" />
+
+                            <h2>뮬란</h2>
+                            <video controls="controls" id="video1" width="80%">
+                                <source src="movies/Mulan/Mulan.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4" />
+                                <track src="movies/Mulan/Mulan.2020.1080p.WEBRip.x264-RARBG.Multi.vtt" srclang="ko" label="Korean" />
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- harry potter btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal4" src="images/poster/harry-potter-post.jpeg" alt="Harry Potter" /></li>
+                    <!-- harry potter modal -->
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/harry-potter-modal.jpeg" alt="" />
+                            <p>
+                                오늘 한국에서 콘텐츠 순위 10위 <br /><br />
+                                7편의 완부작 <br /><br />
+                                영국의 작가 J. K. 롤링의 판타지 소설 해리 포터 시리즈의 주인공. 풀 네임은 해리 제임스 포터. 과거 볼드모트의 악행으로부터 유일하게 생존한 인물. 일명 살아남은 아이다. 생년월일은 1980년 7월 31일이다. 부모는 제임스 포터와 릴리 포터, 대부는 시리우스 블랙. 론 위즐리와는 형제 같은 친구이며 그의 부모인 아서 위즐리와 몰리 위즐리는 거의 양부모나 다름없다. 버넌 더즐리와 피튜니아 더즐리에게 유년 시절 무시를 당했다.
+                            </p>
+                            <br /><br />
+                            <div class="nav">
+                                <div class="multi-level">
+                                    <div class="item">
+                                        <input type="checkbox" id="D" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="D">해리포터</label>
+
+                                        <ul id="hpmovie" onclick="cbclick(event)"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tenet btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal6" src="images/poster/tenet.jpg" alt="mulan" /></li>
+                    <!-- tenet modal -->
+                    <div id="myModal6" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/tenet-poster.jpg" alt="" />
+
+                            <h2>테넷</h2>
+                            <video controls="controls" id="video1" width="80%">
+                                <source src="movies/tenet/tenet.m4v" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <!-- you name btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal8" src="images/poster/yourname.jpeg" alt="mulan" /></li>
+                    <!-- your name modal -->
+                    <div id="myModal8" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/yourname-poster.jpeg" alt="" />
+
+                            <h2>너의 이름은???????</h2>
+                            <video controls="controls" id="video1" width="80%">
+                                <source src="movies/your-name/your-name.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <h3>TV 쇼</h3>
+                    <!-- Disenchantment btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal5" src="images/poster/disenchantment.jpg" alt="disenchantment" /></li>
+                    <!-- Disenchantment modal -->
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/disenchantment-poster.jpg" alt="" />
+                            <p>
+                                오늘 한국에서 콘텐츠 순위 10위 <br /><br />
+                                에클 요청작 <br /><br />
+                                원제는 명사형인 Disenchantment(디스인챈트먼트)지만 국내명은 동사형인 '디스인챈트'로 정해졌다. 디스인첸트먼트라는 본작의 제목은 스토리 내적으로는 저주와 마법 풀기라는 주인공들의 과제를 가리키기도 하지만 이야기 밖에서는 이 작품이 판타지 세계의 신비함과 매지컬한 매력이 거세되고 환상이 풀려버린 시시껄렁함을 풍길 것이라 자조적인 태도로 시청자들에게 경고하는 중의적인 의도로 붙인 것인 모양.
+                            </p>
+                            <br /><br />
+                            <div class="nav">
+                                <div class="multi-level">
+                                    <div class="item">
+                                        <input type="checkbox" id="E" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="E">디스인챈트 시즌1 파트1</label>
+
+                                        <ul id="disenchantment-s1-p1" onclick="cbclick(event)"></ul>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="F" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="F">디스인챈트 시즌1 파트2</label>
+
+                                        <ul id="disenchantment-s1-p2" onclick="cbclick(event)"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- goblin btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal7" src="images/poster/goblin.jpg" alt="disenchantment" /></li>
+                    <!-- goblin modal -->
+                    <div id="myModal7" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/goblin-poster.jpg" alt="" />
+                            <p>
+                                오늘 한국에서 콘텐츠 순위 10위 <br /><br />
+                                라라 요청작 <br /><br />
+                                드라마 전체를 관통하는 메인 테마는 김신과 지은탁의 대화에서 나오는 슬픈 사랑이다. 극중에서 슬픈 사랑은 자기 자신, 부모와 자식, 주군과 충신, 연인, 친구 등 다양한 관계와 형태로 나타난다. 김신은 천 년이고 만 년이고 지속될 수 있는 슬픈 사랑의 매개체이자 주체이다. 전생에서 왕의 이복 형인 선왕, 왕의 신하로서의 상장군 김신, 왕비였으나 역적의 누이로 최후를 맞이한 여동생이 전하지 못했던 각각의 슬픈 사랑을 약 900년 동안 이어 현생에서 전하고 깨닫게 하는 역할로 매개체가 되며
+                                현생과 미래에서는 도깨비 신부와 함께 슬픈 사랑의 주체가 된다. 지은탁은 주로 슬픈 사랑을 받는 주체이다. 이때 특이한 점은 자신에게 사랑을 전하는 매개체가 대부분 신이라는 사실이다. 자신보다 자식을 살리고픈 엄마의 슬픈 사랑을 도깨비를 통해 받아 태어나게 되어 이후에도 삼신할매와 귀신들을 통해 어머니의 사랑을 받는다. 또한 도깨비 신부로서 도깨비의 슬픈 사랑을 저승사자와 창조신의 도움을 통해 받기도 한다. 도깨비와 함께 천 년이고 만 년이고 지속되는 슬픈 사랑을 시작하는
+                                주체이다. 왕여와 김선은 틀어진 전생과 바로잡는 현생 이후 환생으로 천 년에 걸친 기나긴 슬픈 사랑을 마무리 짓는 주체이며 각각 주군이자 친구, 누이로 도깨비의 슬픈 사랑을 함께 한다. 삼신할매 역시 자신이 하나하나 사랑으로 점지한 아이들을 괴롭히는 창조신에게 화를 내는 대목으로 슬픈 사랑을 표현한다. 이외에도 드라마에서는 슬픈 사랑을 죽은 고시원생 귀신이나 저승사자의 찻집 등 여러 방면을 통해 다룬다.
+                            </p>
+                            <br /><br />
+                            <div class="nav">
+                                <div class="multi-level">
+                                    <div class="item">
+                                        <input type="checkbox" id="G" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="G">도깨비</label>
+
+                                        <ul id="goblin" onclick="cbclick(event)"></ul>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="H" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="H">도깨비 스페셜</label>
+
+                                        <ul id="goblin-sp" onclick="cbclick(event)"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- violet evergarden btn -->
+                    <li class="myBtn"><img class="modal-button movie-con-img" href="#myModal9" src="images/poster/violet.jpg" alt="disenchantment" /></li>
+                    <!-- violet evergarden -->
+                    <div id="myModal9" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="movie-img" src="images/poster/violet-poster.jpg" alt="" />
+                            <p>
+                                오늘 한국에서 콘텐츠 순위 10위 <br /><br />
+                                라라 요청작 <br /><br />
+                                교토 애니메이션에서 개최한 제5회 교토 애니메이션 대상에서 처음으로 대상을 수상하였다. 심사가 까다롭기로 유명한 교토 애니메이션 대상에서 처음으로[1] 대상을 수상했다는 사실 때문에 일부 관심을 받기는 했지만, 본격적으로 그 이름을 알리게 된 것은 2016년에 한 홍보 영상이 등장한 이후였다. 해당 영상은 비록 짧은 홍보용 영상이기는 하지만 교토 애니메이션이라는 제작사의 명성에 걸맞게 상당히 화려한 화면으로 사람들의 시선을 사로잡으며 잠시 화제가 되었다. 2017년 6월 14일
+                                애니메이션 방영 일시가 공개되었을 때도 몇몇 사람들이 "아, 그 광고?"하고 반응했을 정도이다.
+                                <br /><br />
+                                14화는 스페셜입니다
+                            </p>
+                            <br /><br />
+                            <div class="nav">
+                                <div class="multi-level">
+                                    <div class="item">
+                                        <input type="checkbox" id="I" />
+                                        <img src="images/Arrow.png" class="arrow" /><label for="I">바이올렛 에버가든</label>
+
+                                        <ul id="violet" onclick="cbclick(event)"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
-            <div class="foot-info">
-                <ul class="foot-social">
-                    <li>
-                        <a href="https://www.instagram.com/pjy0_02/" target="_blank"><i class="fab fa-instagram-square foot-social-i" style="font-size: 40px; color: rgba(255, 255, 255, 0.4)"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pjy0_02/" target="_blank"><i class="fab fa-twitter-square foot-social-i" style="font-size: 40px; color: rgba(255, 255, 255, 0.4)"></i></a>
-                    </li>
-                    <li>
-                        <a href="healing-insland-redesign/index.html" target="_blank"><i class="fab fa-facebook-square foot-social-i" style="font-size: 40px; color: rgba(255, 255, 255, 0.4)"></i></a>
-                    </li>
-                </ul>
+        </main>
 
-                <p>대표 : 빡jy | <a href="" class="clickable" target="_blank">서귀포시 라라면 새우리</a> | <a href="tel:064-792-3927" class="clickable">T.064.792.3927</a></p>
-                <p>
-                    Copyright ©
-                    <script language="javascript" type="text/javascript">
-                        var today = new Date();
-                        var year = today.getFullYear();
-                        document.write(year);
-                    </script>
-                    PJY. All rights reserved. (made by <a href="https://www.instagram.com/davidiskim/" target="_blank">David Kim</a>)
-                </p>
+        <footer>
+            <div class="inner-fooder">
+                <div class="foot-list">
+                    <ul>
+                        <li><a href="개인정보.html">개인정보취급방침</a></li>
+                        <li><a href="dd/index.html">이용약관</a></li>
+                        <li><a href="footer-1.html">상담센터</a></li>
+                        <li><a href="footer-2.html">PJY 안내</a></li>
+                        <li><a href="#header">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="foot-info">
+                    <ul class="foot-social">
+                        <li>
+                            <a href="https://www.instagram.com/pjy0_02/" target="_blank"><i class="fab fa-instagram-square foot-social-i" style="font-size: 40px; color: rgba(255, 255, 255, 0.4)"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/pjy0_02/" target="_blank"><i class="fab fa-twitter-square foot-social-i" style="font-size: 40px; color: rgba(255, 255, 255, 0.4)"></i></a>
+                        </li>
+                        <li>
+                            <a href="healing-insland-redesign/index.html" target="_blank"><i class="fab fa-facebook-square foot-social-i" style="font-size: 40px; color: rgba(255, 255, 255, 0.4)"></i></a>
+                        </li>
+                    </ul>
+
+                    <p>대표 : 빡jy | <a href="" class="clickable" target="_blank">서귀포시 라라면 새우리</a> | <a href="tel:064-792-3927" class="clickable">T.064.792.3927</a></p>
+                    <p>
+                        Copyright ©
+                        <script language="javascript" type="text/javascript">
+                            var today = new Date();
+                            var year = today.getFullYear();
+                            document.write(year);
+                        </script>
+                        PJY. All rights reserved. (made by <a href="https://www.instagram.com/davidiskim/" target="_blank">David Kim</a>)
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/bot-app.js" ></script>
-    <script type="text/javascript" src="js/learned.js" ></script>
-    <script type="text/javascript" src="js/movie.js" ></script>
-    <script type="text/javascript" src="js/script.js" ></script>
-</body>
+        </footer>
+        <script type="text/javascript" src="js/bot-app.js"></script>
+        <script type="text/javascript" src="js/learned.js?id=1234"></script>
+        <script type="text/javascript" src="js/profile-menu.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
+    </body>
 </html>
