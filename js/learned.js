@@ -114,6 +114,51 @@ const violet = {
     subtitle_format: "vtt",
 };
 
+const goddess = {
+    title: "여신강림",
+    title_folder: "goddess",
+    season_folder: "goddess-s1",
+    episode_name: "goddess-e",
+    episode_format: "화",
+    to_document: document.getElementById("goddess"),
+    id: "J",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: false,
+    subtitle_format: "vtt",
+};
+
+const penthouse = {
+    title: "펜트하우스",
+    title_folder: "penthouse",
+    season_folder: "penthouse-s1",
+    episode_name: "penthouse-e",
+    episode_format: "화",
+    to_document: document.getElementById("penthouse"),
+    id: "K",
+    episode_number: 21,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: false,
+    subtitle_format: "vtt",
+};
+
+const rumors = {
+    title: "경의로운 소문",
+    title_folder: "rumors",
+    season_folder: "rumors-s1",
+    episode_name: "rumors-e",
+    episode_format: "화",
+    to_document: document.getElementById("rumors"),
+    id: "L",
+    episode_number: 12,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: false,
+    subtitle_format: "vtt",
+};
+
 // movie name
 
 function videoInsert(ob) {
@@ -160,3 +205,6 @@ videoInsert(disenchantment_p2);
 videoInsert(goblin);
 videoInsert(goblinSP);
 videoInsert(violet);
+videoInsert(goddess);
+videoInsert(penthouse);
+videoInsert(rumors);
