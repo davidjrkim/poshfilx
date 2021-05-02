@@ -169,100 +169,10 @@ const disenchantment_p3 = {
     id: "M",
     episode_number: 10,
     video_type: "mp4",
-    video_format: "mp4",
+    video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
     video_id: "disvid3",
-};
-
-const sky = {
-    title: "스카이 캐슬",
-    title_folder: "sky",
-    season_folder: "sky-s1",
-    episode_name: "sky-e",
-    episode_format: "화",
-    to_document: document.getElementById("sky"),
-    id: "N",
-    episode_number: 20,
-    video_type: "mp4",
-    video_format: "mp4",
-    subtitle: false,
-    subtitle_format: "vtt",
-};
-
-const narnia = {
-    title: "나니아 연대기",
-    title_folder: "narnia",
-    season_folder: "Narnia",
-    episode_name: "Narnia",
-    episode_format: "편",
-    to_document: document.getElementById("narnia"),
-    id: "O",
-    episode_number: 3,
-    video_type: "mp4",
-    video_format: "m4v",
-    subtitle: true,
-    subtitle_format: "vtt",
-};
-
-const sherlock = {
-    title: "셜록",
-    title_folder: "sherlock",
-    season_folder: "sherlock-s1",
-    episode_name: "sherlock-s1-e",
-    episode_format: "편",
-    to_document: document.getElementById("sherlock"),
-    id: "P",
-    episode_number: 3,
-    video_type: "mp4",
-    video_format: "m4v",
-    subtitle: true,
-    subtitle_format: "vtt",
-};
-
-const sherlock2 = {
-    title: "셜록 시즌2",
-    title_folder: "sherlock",
-    season_folder: "sherlock-s2",
-    episode_name: "sherlock-s2-e",
-    episode_format: "편",
-    to_document: document.getElementById("sherlock2"),
-    id: "Q",
-    episode_number: 3,
-    video_type: "mp4",
-    video_format: "m4v",
-    subtitle: true,
-    subtitle_format: "vtt",
-};
-
-const sherlock3 = {
-    title: "셜록 시즌3",
-    title_folder: "sherlock",
-    season_folder: "sherlock-s3",
-    episode_name: "sherlock-s3-e",
-    episode_format: "편",
-    to_document: document.getElementById("sherlock3"),
-    id: "R",
-    episode_number: 3,
-    video_type: "mp4",
-    video_format: "m4v",
-    subtitle: true,
-    subtitle_format: "vtt",
-};
-
-const sherlock4 = {
-    title: "셜록 시즌4",
-    title_folder: "sherlock",
-    season_folder: "sherlock-s4",
-    episode_name: "sherlock-s4-e",
-    episode_format: "편",
-    to_document: document.getElementById("sherlock4"),
-    id: "S",
-    episode_number: 3,
-    video_type: "mp4",
-    video_format: "m4v",
-    subtitle: true,
-    subtitle_format: "vtt",
 };
 
 // movie name end
@@ -315,8 +225,3 @@ videoInsert(goddess);
 videoInsert(penthouse);
 videoInsert(rumors);
 videoInsert(disenchantment_p3);
-videoInsert(sky);
-videoInsert(narnia);
-videoInsert(sherlock);
-videoInsert(sherlock2);
-videoInsert(sherlock3);
