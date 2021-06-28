@@ -1,9 +1,11 @@
 const player = document.getElementById("player");
 let contentEM;
 
+
+
 // abc counter
 
-const counter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z"];
+const counter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z", "AA"];
 
 // abc counter end
 
@@ -172,7 +174,81 @@ const disenchantment_p3 = {
     video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
-    video_id: "disvid3",
+};
+
+const titan = {
+    title: "진격의 거인1기",
+    title_folder: "titan",
+    season_folder: "titan-s1",
+    episode_name: "titan-s1-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan"),
+    id: "T",
+    episode_number: 25,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const titan2 = {
+    title: "진격의 거인2기",
+    title_folder: "titan",
+    season_folder: "titan-s2",
+    episode_name: "titan-s2-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan2"),
+    id: "U",
+    episode_number: 12,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const titan3 = {
+    title: "진격의 거인3기",
+    title_folder: "titan",
+    season_folder: "titan-s3",
+    episode_name: "titan-s3-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan3"),
+    id: "V",
+    episode_number: 10,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const titan4 = {
+    title: "진격의 거인4기",
+    title_folder: "titan",
+    season_folder: "titan-s4",
+    episode_name: "titan-s4-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan4"),
+    id: "W",
+    episode_number: 10,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const mando_s1 = {
+    title: "만달로리안 시즌1",
+    title_folder: "mando",
+    season_folder: "mando-s1",
+    episode_name: "mando-s1-e",
+    episode_format: "화",
+    to_document: document.getElementById("mando-s1"),
+    id: "X",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
 };
 
 // movie name end
@@ -188,7 +264,7 @@ function videoInsert(ob) {
 
             <ul loading="lazy" >
                 <p>${ob["title"]} ${i + 1}${ob["episode_format"]}</p>
-                <video class="video1" controls="controls" id="${ob["video-id"]}" width="80%" preload="none">
+                <video class="video1" controls="controls" width="80%" preload="none">
                 <source loading="lazy" src="movies/${ob["title_folder"]}/${ob["season_folder"]}/${ob["episode_name"]}${i + 1}/${ob["episode_name"]}${i + 1}.${ob["video_format"]}" type="video/${ob["video_type"]}" />
                 <track src="movies/${ob["title_folder"]}/${ob["season_folder"]}/${ob["episode_name"]}${i + 1}/${ob["episode_name"]}${i + 1}.${ob["subtitle_format"]}" srclang="ko" label="Korean" />
                 </video>
@@ -203,7 +279,7 @@ function videoInsert(ob) {
     
                 <ul loading="lazy" >
                     <p>${ob["title"]} ${i + 1}${ob["episode_format"]}</p>
-                    <video class="video1" controls="controls" id="${ob["video-id"]}" width="80%" preload="none">
+                    <video class="video1" controls="controls" width="80%" preload="none">
                     <source src="movies/${ob["title_folder"]}/${ob["season_folder"]}/${ob["episode_name"]}${i + 1}/${ob["episode_name"]}${i + 1}.${ob["video_format"]}" type="video/${ob["video_type"]}" />
                     </video>
                 </ul>
@@ -213,6 +289,7 @@ function videoInsert(ob) {
         ob["to_document"].appendChild(node);
     }
 }
+
 
 videoInsert(TWDs10);
 videoInsert(harrypotter);
@@ -225,3 +302,8 @@ videoInsert(goddess);
 videoInsert(penthouse);
 videoInsert(rumors);
 videoInsert(disenchantment_p3);
+videoInsert(titan);
+videoInsert(titan2);
+videoInsert(titan3);
+videoInsert(titan4);
+videoInsert(mando_s1);

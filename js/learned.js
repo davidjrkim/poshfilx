@@ -203,6 +203,7 @@ const narnia = {
     video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
+    coming_soon: true,
 };
 
 const sherlock = {
@@ -218,6 +219,7 @@ const sherlock = {
     video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
+    coming_soon: true,
 };
 
 const sherlock2 = {
@@ -233,6 +235,7 @@ const sherlock2 = {
     video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
+    coming_soon: true,
 };
 
 const sherlock3 = {
@@ -248,6 +251,7 @@ const sherlock3 = {
     video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
+    coming_soon: true,
 };
 
 const sherlock4 = {
@@ -263,13 +267,150 @@ const sherlock4 = {
     video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
+    coming_soon: true,
 };
+
+const titan = {
+    title: "진격의 거인1기",
+    title_folder: "titan",
+    season_folder: "titan-s1",
+    episode_name: "titan-s1-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan"),
+    id: "T",
+    episode_number: 25,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
+const titan2 = {
+    title: "진격의 거인2기",
+    title_folder: "titan",
+    season_folder: "titan-s2",
+    episode_name: "titan-s2-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan2"),
+    id: "U",
+    episode_number: 12,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
+const titan3 = {
+    title: "진격의 거인3기",
+    title_folder: "titan",
+    season_folder: "titan-s3",
+    episode_name: "titan-s3-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan3"),
+    id: "V",
+    episode_number: 10,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
+const titan4 = {
+    title: "진격의 거인4기",
+    title_folder: "titan",
+    season_folder: "titan-s4",
+    episode_name: "titan-s4-e",
+    episode_format: "화",
+    to_document: document.getElementById("titan4"),
+    id: "W",
+    episode_number: 10,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
+const mando_s1 = {
+    title: "만달로리안 시즌1",
+    title_folder: "mando",
+    season_folder: "mando-s1",
+    episode_name: "mando-s1-e",
+    episode_format: "화",
+    to_document: document.getElementById("mando-s1"),
+    id: "X",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+};
+
+const mando_s2 = {
+    title: "만달로리안 시즌2",
+    title_folder: "mando",
+    season_folder: "mando-s2",
+    episode_name: "mando-s2-e",
+    episode_format: "화",
+    to_document: document.getElementById("mando-s2"),
+    id: "Y",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
+const mando_s3 = {
+    title: "만달로리안 시즌3",
+    title_folder: "mando",
+    season_folder: "mando-s3",
+    episode_name: "mando-s3-e",
+    episode_format: "화",
+    to_document: document.getElementById("mando-s3"),
+    id: "Z",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
+const mando_s4 = {
+    title: "만달로리안 시즌4",
+    title_folder: "mando",
+    season_folder: "mando-s4",
+    episode_name: "mando-s4-e",
+    episode_format: "화",
+    to_document: document.getElementById("mando-s4"),
+    id: "AA",
+    episode_number: 8,
+    video_type: "mp4",
+    video_format: "mp4",
+    subtitle: true,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
 
 // movie name end
 
 function videoInsert(ob) {
+
+    if (ob["coming_soon"]) {
+        var node2 = document.createElement("LI");
+        node2.innerHTML = `<p>${ob["title"]} Coming Soon</p>`;
+        ob["to_document"].appendChild(node2);
+    } else {
+
     for (let i = 0; i < ob["episode_number"]; i++) {
         var node = document.createElement("LI");
+
         if (ob["subtitle"]) {
             node.innerHTML = `
         <div class="sub-item">
@@ -300,8 +441,11 @@ function videoInsert(ob) {
             </div>
         `;
         }
+        
         ob["to_document"].appendChild(node);
     }
+
+}
 }
 
 videoInsert(TWDs10);
@@ -320,3 +464,11 @@ videoInsert(narnia);
 videoInsert(sherlock);
 videoInsert(sherlock2);
 videoInsert(sherlock3);
+videoInsert(titan);
+videoInsert(titan2);
+videoInsert(titan3);
+videoInsert(titan4);
+videoInsert(mando_s1);
+videoInsert(mando_s2);
+videoInsert(mando_s3);
+videoInsert(mando_s4);
