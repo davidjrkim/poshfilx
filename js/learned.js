@@ -152,7 +152,7 @@ const rumors = {
     episode_format: "화",
     to_document: document.getElementById("rumors"),
     id: "L",
-    episode_number: 12,
+    episode_number: 16,
     video_type: "mp4",
     video_format: "mp4",
     subtitle: false,
@@ -362,36 +362,36 @@ const mando_s2 = {
     video_format: "mp4",
     subtitle: true,
     subtitle_format: "vtt",
-    coming_soon: true,
+    coming_soon: false,
 };
 
-const mando_s3 = {
-    title: "만달로리안 시즌3",
-    title_folder: "mando",
-    season_folder: "mando-s3",
-    episode_name: "mando-s3-e",
-    episode_format: "화",
-    to_document: document.getElementById("mando-s3"),
+const john_wick = {
+    title: "존윅",
+    title_folder: "john-wick",
+    season_folder: "john-wick",
+    episode_name: "john-wick",
+    episode_format: " ",
+    to_document: document.getElementById("john"),
     id: "Z",
-    episode_number: 8,
+    episode_number: 4,
     video_type: "mp4",
-    video_format: "mp4",
+    video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
     coming_soon: true,
 };
 
-const mando_s4 = {
-    title: "만달로리안 시즌4",
-    title_folder: "mando",
-    season_folder: "mando-s4",
-    episode_name: "mando-s4-e",
+const myhero = {
+    title: "나의 히어로 아카데미아",
+    title_folder: "myhero",
+    season_folder: "myhero-s1",
+    episode_name: "myhero-s1-e",
     episode_format: "화",
-    to_document: document.getElementById("mando-s4"),
+    to_document: document.getElementById("myhero"),
     id: "AA",
-    episode_number: 8,
+    episode_number: 13,
     video_type: "mp4",
-    video_format: "mp4",
+    video_format: "m4v",
     subtitle: true,
     subtitle_format: "vtt",
     coming_soon: true,
@@ -470,5 +470,5 @@ videoInsert(titan3);
 videoInsert(titan4);
 videoInsert(mando_s1);
 videoInsert(mando_s2);
-videoInsert(mando_s3);
-videoInsert(mando_s4);
+videoInsert(john_wick);
+videoInsert(myhero);
