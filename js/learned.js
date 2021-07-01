@@ -397,6 +397,22 @@ const myhero = {
     coming_soon: true,
 };
 
+const kingdom1 = {
+    title: "킹덤",
+    title_folder: "kingdom",
+    season_folder: "kingdom-s1",
+    episode_name: "kingdom-s1-e",
+    episode_format: "화",
+    to_document: document.getElementById("kingdom1"),
+    id: "A",
+    episode_number: 6,
+    video_type: "mp4",
+    video_format: "m4v",
+    subtitle: false,
+    subtitle_format: "vtt",
+    coming_soon: true,
+};
+
 
 // movie name end
 
@@ -472,3 +488,4 @@ videoInsert(mando_s1);
 videoInsert(mando_s2);
 videoInsert(john_wick);
 videoInsert(myhero);
+videoInsert(kingdom1);

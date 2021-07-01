@@ -103,13 +103,29 @@
 		</header>
 
 		<main>
+			<div class="modal" style="display: block;">
+				<div class="modal-content" style="
+				padding-top: 20px;
+				width: 400px;
+				text-align: center;
+				padding-bottom: 35px;
+				">
+					<p style="
+					padding-bottom: 20px;
+				">
+						영상을 플래이 눌러야 로딩됩니다
+						
+					</p>
+					<span class="close" style="position: relative; float: none; border: solid 2px rgb(71, 87, 46); border-radius: 4px; padding: 7px; font-size: 16px;">확인</span>
+				</div>
+			</div>
 			<div class="movie-con">
 				<ul class="movie-icon">
 					<h3>호러 드라마</h3>
 
-					<!-- Trigger/Open The Modal -->
+					<!-- walking dead btn -->
 					<li class="myBtn"><img class="modal-button movie-con-img" href="#myModal1" src="images/poster/the-walking-dead.png" alt="the walking dead" /></li>
-
+					<!-- walking dead modal -->
 					<div id="myModal1" class="modal">
 						<div class="modal-content">
 							<span class="close">&times;</span>
@@ -134,17 +150,16 @@
 						</div>
 					</div>
 
-					<!-- Trigger/Open The Modal -->
+					<!-- kingdom btn -->
 					<li class="myBtn"><img class="modal-button movie-con-img" href="#myModal2" src="images/poster/kingdom.jpg" alt="kingdom" /></li>
-
+					<!-- kingdom modal -->
 					<div id="myModal2" class="modal">
 						<div class="modal-content">
 							<span class="close">&times;</span>
-							<img class="movie-img" src="images/the-walking-dead-s1.png" alt="" />
+							<img class="movie-img" src="images/poster/kingdom-inner.jpg" alt="" />
 							<p>
-								2019 시즌 10개 <br /><br />
+								
 								오늘 한국에서 콘텐츠 순위 10위 <br /><br />
-								시즌 1: 1화 "사라지다" <br /><br />
 								어느 날 갑자기 좀비가 점령해버린 세상. 지금까지 살아온 방식은 잊어야 한다. 우연히 마주친 모건 부자에게 새로운 생존 법칙을 배우는 릭. 사라진 가족, 꼭 찾고 말리라.
 							</p>
 							<br /><br />
@@ -152,9 +167,9 @@
 								<div class="multi-level">
 									<div class="item">
 										<input type="checkbox" id="A" />
-										<img src="images/Arrow.png" class="arrow" /><label for="A">시즌10</label>
+										<img src="images/Arrow.png" class="arrow" /><label for="A">킹덤</label>
 
-										<ul id="radiocb" onclick="cbclick(event)"></ul>
+										<ul id="kingdom1" onclick="cbclick(event)"></ul>
 									</div>
 								</div>
 							</div>

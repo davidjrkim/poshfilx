@@ -16,3 +16,4 @@ if (yes !== "true") {
         localStorage.setItem("yes", "true");
     }
 }
+
