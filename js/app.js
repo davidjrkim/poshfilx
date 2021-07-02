@@ -1,19 +1,13 @@
-var password;
-var pass1 = "2482510@";
-var yes = localStorage.getItem("yes");
+var modals = document.querySelector(".howToPlay");
+var popupBtn = document.getElementById("restop");
+var dont_show_popup = localStorage.getItem("dont_show_popup");
 
-if (yes !== "true") {
-    password = prompt("암호 므야", "");
-
-    if (password == pass1) {
-        alert("어서 오십시오 (비번이 저장되었습니다)");
-    } else {
-        location.reload();
-        // window.location="https://www.instagram.com/pjy0_02/";
-    }
-
-    if (password == pass1) {
-        localStorage.setItem("yes", "true");
-    }
+if (dont_show_popup == "true") {
+    modals.style.display = "none";
+} else {
+    modals.style.display = "block";
 }
 
+popupBtn.addEventListener("click", function(){ 
+    localStorage.setItem("dont_show_popup", "true");
+});
