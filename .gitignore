@@ -1,2 +1,4 @@
 movies/
 chumboo/
+node_modules/
+package-lock.json
