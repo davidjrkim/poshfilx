@@ -2,7 +2,7 @@ const player = document.getElementById("player");
 let contentEM;
 
 // abc counter
-const counter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z"];
+const counter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z", "AA", "AB", "AC"];
 // abc counter end
 
 // start movie name
@@ -756,10 +756,10 @@ const movie_list = [
         id: "Z",
         episode_number: 4,
         video_type: "mp4",
-        video_format: "m4v",
+        video_format: "mp4",
         subtitle: true,
         subtitle_format: "vtt",
-        coming_soon: true,
+        coming_soon: false,
     },
     {
         title: "나의 히어로 아카데미아",
@@ -788,6 +788,22 @@ const movie_list = [
         video_type: "mp4",
         video_format: "mp4",
         subtitle: false,
+        subtitle_format: "vtt",
+        coming_soon: false,
+    },
+
+    {
+        title: "주술회전(Jujutsu Kaisen)",
+        title_folder: "jujutsu-kaisen",
+        season_folder: "jujutsu-kaisen-s1",
+        episode_name: "jujutsu-kaisen-e",
+        episode_format: "화",
+        to_document: document.getElementById("jujutsu-kaisen"),
+        id: "AC",
+        episode_number: 25,
+        video_type: "mp4",
+        video_format: "mp4",
+        subtitle: true,
         subtitle_format: "vtt",
         coming_soon: false,
     },
