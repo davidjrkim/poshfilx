@@ -832,8 +832,8 @@ for (let j = 0; j < movie_list.length; j++) {
             <ul loading="lazy" >
                 <p>${movie_list[j]["title"]} ${i + 1}${movie_list[j]["episode_format"]}</p>
                 <video class="video1" controls="controls" id="${movie_list[j]["video-id"]}" poster="images/poster/${movie_list[j]["title_folder"]}-poster.jpg" width="80%" preload="none">
-                <source loading="lazy" src="movies/${movie_list[j]["title_folder"]}/${movie_list[j]["season_folder"]}/${movie_list[j]["episode_name"]}${i + 1}/${movie_list[j]["episode_name"]}${i + 1}.${movie_list[j]["video_format"]}" type="video/${movie_list[j]["video_type"]}" />
-                <track src="movies/${movie_list[j]["title_folder"]}/${movie_list[j]["season_folder"]}/${movie_list[j]["episode_name"]}${i + 1}/${movie_list[j]["episode_name"]}${i + 1}.${movie_list[j]["subtitle_format"]}" srclang="ko" label="Korean" default="" />
+                <source loading="lazy" src="http://source.poshflix.me/movies/${movie_list[j]["title_folder"]}/${movie_list[j]["season_folder"]}/${movie_list[j]["episode_name"]}${i + 1}/${movie_list[j]["episode_name"]}${i + 1}.${movie_list[j]["video_format"]}" type="video/${movie_list[j]["video_type"]}" />
+                <track src="http://source.poshflix.me/movies/${movie_list[j]["title_folder"]}/${movie_list[j]["season_folder"]}/${movie_list[j]["episode_name"]}${i + 1}/${movie_list[j]["episode_name"]}${i + 1}.${movie_list[j]["subtitle_format"]}" srclang="ko" label="Korean" default="" />
                 </video>
             </ul>
         </div>
@@ -847,7 +847,7 @@ for (let j = 0; j < movie_list.length; j++) {
                 <ul loading="lazy" >
                     <p>${movie_list[j]["title"]} ${i + 1}${movie_list[j]["episode_format"]}</p>
                     <video class="video1" controls="controls" poster="images/poster/${movie_list[j]["title_folder"]}-poster.jpg" id="${movie_list[j]["video-id"]}" width="80%" preload="none">
-                    <source src="movies/${movie_list[j]["title_folder"]}/${movie_list[j]["season_folder"]}/${movie_list[j]["episode_name"]}${i + 1}/${movie_list[j]["episode_name"]}${i + 1}.${movie_list[j]["video_format"]}" type="video/${movie_list[j]["video_type"]}" />
+                    <source src="http://source.poshflix.me/movies/${movie_list[j]["title_folder"]}/${movie_list[j]["season_folder"]}/${movie_list[j]["episode_name"]}${i + 1}/${movie_list[j]["episode_name"]}${i + 1}.${movie_list[j]["video_format"]}" type="video/${movie_list[j]["video_type"]}" />
                     </video>
                 </ul>
             </div>
